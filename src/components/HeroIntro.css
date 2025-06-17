@@ -1,0 +1,57 @@
+.hero-container{
+    height:100vh;
+    
+    width:100vw;
+    color:white;
+    background: url('src/assets/mayerwarts.png') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.smoke-bg{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: smokeIn 2s ease-in-out forwards;
+}
+.smoke-bg.fade-out{
+    animation: smokeOut 2s ease-in-out forwards;
+}
+.hero-text{
+    font-size: 5rem;
+  color: #f1f1f1;
+  font-family: 'HarryP', serif;
+  
+  text-align: center;
+  text-shadow: 0 0 20px #fff;
+}
+
+@keyframes smokeIn{
+    0%{
+        opacity:0;
+        filter:blur(10px);
+    }
+    100%{
+        opacity:1;
+        filter:blur(0);
+    }
+}
+@keyframes smokeOut{
+    0%{
+        opacity:1;
+        filter:blur(0);
+    }
+    100%{
+        opacity:0;
+        filter:blur(20px);
+    }
+}
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 2rem;
+    }
+}

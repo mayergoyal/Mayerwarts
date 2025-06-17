@@ -1,0 +1,58 @@
+.goblet-section {
+    height: 100vh;
+    width:100vw;
+    background: url('src/assets/walls.png') center center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+  }
+  .fire{
+    filter: drop-shadow(0 0 10px rgba(107, 94, 204, 0.7))
+        drop-shadow(0 0 30px rgba(49, 21, 119, 0.5))
+        drop-shadow(0 0 60px rgba(97, 15, 230, 0.3));
+
+  }
+  .goblet-fire{
+    filter: drop-shadow(0 0 100px rgba(107, 94, 204, 0.7))
+        drop-shadow(0 0 100px rgba(49, 21, 119, 0.5))
+        drop-shadow(0 0 100px rgba(97, 15, 230, 0.3));
+  }
+  .goblet-text {
+    font-family: 'HarryP', serif;
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-shadow: 0 0 10px #FFD700;
+  }
+  .sparkle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #4eb5ff;
+    border-radius: 50%;
+    animation: sparkleAnim 3s linear infinite;
+    opacity: 0.65;
+  }
+  
+  @keyframes sparkleAnim {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-200px) scale(0.5);
+      opacity: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    .goblet-text {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 382px) {
+  .goblet-text {
+      font-size: 1.5rem;
+  }
+}

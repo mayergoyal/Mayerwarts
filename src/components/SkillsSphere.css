@@ -1,0 +1,4 @@
+.skills-sphere{
+    filter:drop-shadow(0 0 60px rgba(97, 15, 230, 0.3));
+    color:blue;
+}

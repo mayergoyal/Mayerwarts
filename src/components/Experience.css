@@ -1,0 +1,93 @@
+.main{
+    background: url("src/assets/brickwall.png") center center / cover repeat;
+    overflow-x: auto !important;
+    white-space: nowrap;
+    
+}
+.title{
+    margin-left:50%;
+    top:20px;
+    color:#5a3a22;
+    filter:drop-shadow(0 0 30px #887d6a);
+
+}
+.experience-section {
+    width: 100vw;
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.7);
+    scroll-snap-type: x mandatory;
+  }
+  
+  .scroll-track {
+    display: flex;
+    gap: 40px;
+  }
+  .frame {
+    max-width: 300px;
+    min-width:300px;
+    height: 420px;
+    padding: 25px;
+    background-color: #1e140a;
+    color: #f5e1b9;
+    border: 10px solid #8b5e3c;
+    border-radius: 20px;
+    box-shadow:
+      inset 0 0 8px #d4a66a,
+      0 0 15px rgba(255, 215, 165, 0.6),
+      5px 5px 20px rgba(0, 0, 0, 0.5);
+    font-family: 'Cinzel Decorative', serif;
+    scroll-snap-align: start;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin:45px;
+    overflow-wrap: break-word; /* Ensures long words wrap */
+  word-break: break-word; /* fallback */
+  }
+  
+  .frame:hover {
+    transform: scale(1.05);
+    box-shadow:
+      inset 0 0 12px #f2c57c,
+      0 0 25px rgba(255, 235, 180, 0.8),
+      8px 8px 25px rgba(0, 0, 0, 0.6);
+  }
+  
+  .frame h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #ffd28f;
+  }
+  
+  .frame .company {
+    font-style: italic;
+    color: #e6c88b;
+    margin-bottom: 5px;
+  }
+  
+  .frame .duration {
+    font-size: 0.9rem;
+    color: #c1a76f;
+    margin-bottom: 10px;
+  }
+  
+  .frame .desc {
+    font-size: 1.1rem;
+    white-space: normal;
+    
+  }
+  .link-container{
+    width:70px;
+    height:30px;
+    background-color: #2f3b6a;
+    border-radius: 20px;
+    margin-left: 40%;
+  }

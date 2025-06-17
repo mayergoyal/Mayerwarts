@@ -1,0 +1,14 @@
+.transition{
+       background-color: black;
+       height:40vh;
+       width:100vs;
+       
+      filter:blur(10px)
+}
+.transition-2{
+      background: rgb(19, 19, 43);
+      height:40vh;
+      width:100vs;
+      
+     filter:blur(10px)
+}

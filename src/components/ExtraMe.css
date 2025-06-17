@@ -1,0 +1,6 @@
+.mainextra{
+    overflow-x: hidden;
+    background: linear-gradient(to bottom,black,rgb(61, 61, 18));
+    margin:0;
+    padding: 0;
+}
