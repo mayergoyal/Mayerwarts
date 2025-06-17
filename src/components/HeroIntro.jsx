@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./HeroIntro.css";
-
+import herobg from "../assets/mayerwarts.png"; // Import the background image
 const HeroIntro = ({ onFinish }) => {
   const [showText, setShowText] = useState(true); // ✅ Start with visible text
 
@@ -16,7 +16,14 @@ const HeroIntro = ({ onFinish }) => {
   }, []);
 
   return (
-    <div className="hero-container">
+    <div
+      className="hero-container"
+      style={{
+        background: `url(${herobg}) center center / cover no-repeat`,
+        height: "100vh",
+        width: "100vw",
+      }}
+    >
       <div className={`smoke-bg ${!showText ? "fade-out" : ""}`}>
         <motion.h1
           className="hero-text"

@@ -5,7 +5,7 @@ import { faInbox } from "@fortawesome/free-solid-svg-icons";
 import sortinghat from "../assets/sorting.gif";
 import { useRef, useEffect } from "react";
 import sortinghatAudio from "../audio/harrysortinghat.mp3";
-
+import { useForm, ValidationError } from "@formspree/react";
 const Contact = () => {
   const audioref = useRef(null);
   const containerRef = useRef(null);
@@ -21,7 +21,15 @@ const Contact = () => {
       hasPlayedRef.current = true;
     }
   };
-
+  const [state, handleSubmit]= useForm("xanjbqop");
+  if (state.succeeded) {
+    return <p>Thanks for reaching out! I’ll get back to you soon.</p>;
+  }
+  const onSubmit = (e) => {
+    e.preventDefault(); // ⛔ Prevent default form reload/redirect
+    handleSubmit(e); // ✅ Call Formspree's submission handler
+  };
+  
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -59,7 +67,10 @@ const Contact = () => {
           reach out!
         </p>
         <div className="form-cap">
-          <form className="contact-form">
+          <form
+            className="contact-form"
+            onSubmit={handleSubmit}
+          >
             <div className="form">
               <label htmlFor="name">Name:</label>
               <input type="text" id="name" name="name" required />
@@ -75,7 +86,10 @@ const Contact = () => {
                 required
               ></textarea>
 
-              <button type="submit">Send Message</button>
+              <button type="submit"
+              onSubmit={onSubmit}
+              disabled={state.submitting}
+              >Send Message</button>
 
               <div className="sociallinks">
                 <a href="https://www.linkedin.com/in/mayer-goyal-07a58527a/">

@@ -1,7 +1,7 @@
 .goblet-section {
     height: 100vh;
     width:100vw;
-    background: url('src/assets/walls.png') center center / cover no-repeat;
+    background: url('../assets/walls.png') center center / cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;

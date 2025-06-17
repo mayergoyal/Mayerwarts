@@ -20,15 +20,15 @@ const MainPage = () => {
     <div style={{ scrollBehavior: "smooth" }}>
       <Navbar />
       <ParallaxProvider>
-        <Parallax speed={-10}>
+        <Parallax >
           <section id="home">
             <GobletIntro />
           </section>
         </Parallax>
 
-        <Parallax speed={-10} className="transition"></Parallax>
+        <Parallax  className="transition"></Parallax>
 
-        <Parallax speed={-18}>
+        <Parallax >
           <section id="about">
             <About />
           </section>

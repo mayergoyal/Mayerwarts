@@ -1,6 +1,7 @@
 import React from 'react';
 import './Experience.css';
-import fashion from '../assets/fashion.jpg'; // Example image, replace with actual image path
+import brickwall from "../assets/brickwall.png"
+// Example image, replace with actual image path
 // Assuming you have a CSS file for styling
 const experiences = [
   {
@@ -53,8 +54,15 @@ const experiences = [
 ];
 const Experience=()=>{
 return (
-  <div className="main" style={{ overflowX: "scroll" }}>
-    <h1 className='title'>    The  Wall of Experiences </h1>
+  <div className="main" style={{ overflowX: "scroll",
+    background: `url(${brickwall}) center center / cover repeat`,
+    height: '100vh',
+    width: '100vw',
+
+   }}
+  
+  >
+    
     <section className="experience-section">
       <div className="scroll-track">
         {experiences.map((exp, index) => (

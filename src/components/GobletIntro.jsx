@@ -1,18 +1,31 @@
 import { Player } from "@lottiefiles/react-lottie-player";
 import goblet from "../assets/goblet-fire.json";
 import "./GobletIntro.css";
-
+import walls from "../assets/walls.png"
 const GobletIntro = () => {
   const sparkles = Array.from({ length: 40 });
 
   return (
-    <div className="goblet-section">
+    <div
+      className="goblet-section"
+      style={{
+        background: `url(${walls}) center center / cover no-repeat`,
+        height: "100vh",
+        width: "100vw",
+      }}
+    >
       <div className="fire">
         <Player
           autoplay
           loop
           src={goblet}
-          style={{ height: "500px", width: "500px", opacity: 0.55 , margin:0,padding:0 }}
+          style={{
+            height: "500px",
+            width: "500px",
+            opacity: 0.55,
+            margin: 0,
+            padding: 0,
+          }}
           className="goblet-fire"
         />
       </div>

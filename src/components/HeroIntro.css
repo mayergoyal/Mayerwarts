@@ -3,7 +3,7 @@
     
     width:100vw;
     color:white;
-    background: url('src/assets/mayerwarts.png') center center / cover no-repeat;
+    background: url('../assets/mayerwarts.png') center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;

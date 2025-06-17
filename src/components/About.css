@@ -5,8 +5,9 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
-  padding: 0 1rem;
+  padding: 0 ;
   width: 100vw;
+  margin:0;
   
 }
 
@@ -94,6 +95,7 @@
   }
 }
 
+/* Existing: For tablets & small laptops */
 @media (max-width: 768px) {
   .about-section {
     flex-direction: column;
@@ -101,18 +103,51 @@
   }
 
   .player {
-    max-width: 250px;
+    max-width: 270px;
   }
 
   .about-scroll {
     padding: 20px;
     font-size: 0.2rem;
-    width:400px;
+    width: 400px;
   }
+
   .about-text {
     font-size: 1rem;
   }
-  .section-title{
+
+  .section-title {
     width: 400px;
   }
 }
+
+/* 🔧 New: For phones (extra small screens) */
+@media (max-width: 567px) {
+  .about-section {
+    padding: 20px 0;
+    align-items: center;
+  }
+
+  .player {
+    max-width: 250px;
+  }
+
+  .about-scroll {
+    width: 70%;
+    font-size: 0.85rem;
+    padding: 10px;
+    overflow-x: auto;
+  }
+
+  .about-text {
+    font-size: 0.89rem;
+    text-align: center;
+  }
+
+  .section-title {
+    width: 90%;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
