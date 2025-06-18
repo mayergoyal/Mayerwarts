@@ -22,7 +22,6 @@ const Navbar = () => {
         </div>
 
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          
           <li>
             <a href="#home" className="logo">
               MayerWarts
@@ -56,6 +55,15 @@ const Navbar = () => {
           <li>
             <a href="#contact" onClick={() => setMenuOpen(false)}>
               Contact
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1ia9ISUA_sdE22DZ0VXQCnvcSzDsu5ScP/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
             </a>
           </li>
         </ul>
