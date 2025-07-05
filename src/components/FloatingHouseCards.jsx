@@ -28,7 +28,7 @@ const houses = [
     color: "#222f5b",
     frontImage: raven,
     backText:
-      "Ravenclaw is all about Writing, Creative Thinking, Research. When I'm not coding I write stories , poems . I love synthesising characters , plots and new worlds. Fiction is my fortae. Hindi poems are my my way to express . I 'm also involved in simplifying Bhagawat Geeta and thus post videos on my page called BlueSoul",
+      "Ravenclaw is all about Writing, Creative Thinking, Research. When I'm not coding I write stories , poems . I love synthesising characters , plots and new worlds. Fiction is my fortae. Hindi poems are my way to express . I 'm also involved in simplifying Bhagawat Geeta and thus post videos on my page called BlueSoul",
     backLink1: "https://www.instagram.com/thebluesoul0/",
   },
   {

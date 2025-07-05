@@ -13,6 +13,7 @@ import fashion from "../assets/fashion.jpg"
  import l2 from "../assets/ll.png"
  import vibecheck from "../assets/vibecheck.png"
  import v2 from "../assets/vc.png"
+ import ehc from "../assets/engtodi.jpg"
 const Projects=()=>{
 return (
   <div className="mani">
@@ -23,7 +24,7 @@ return (
         imgsrc={cognition}
         about="This project aims to gamify the cognition and mental illness diagnosis , created under Drid internship 2024"
         githublink="https://github.com/mayergoyal/cognition-and-mental-illness"
-        deploylink={NaN}
+        deploylink={null}
         projectdisplay={cog2}
       />
       <ProjectBox
@@ -31,23 +32,23 @@ return (
         imgsrc={enftohindi}
         about="This project aims to convert english language videos into hindi using AI models "
         githublink="https://github.com/mayergoyal/COEengtohindi"
-        deploylink={NaN}
-        projectdisplay={NaN}
+        deploylink={null}
+        projectdisplay={ehc}
       />
       <ProjectBox
         name="Fashion App"
         imgsrc={fashion}
         about="This react native app comprise various fashion conscious features like cloth/accessories recommendation system , cloth customization and 3D Avatar wrap and try system  "
         githublink="https://github.com/mayergoyal/Fashion-App-System"
-        deploylink={NaN}
-        projectdisplay={NaN}
+        deploylink={null}
+        projectdisplay={null}
       />
       <ProjectBox
         name="Karing: Medication"
         imgsrc={karing}
         about="This streamlit designed tech page is for medication including different features like medicine recommendation , disease diagnosis etc"
         githublink="https://github.com/mayergoyal/Karing-Medicine-Recommendation-System"
-        deploylink={NaN}
+        deploylink={null}
         projectdisplay={k2}
       />
       <ProjectBox
@@ -55,15 +56,15 @@ return (
         imgsrc={ldl}
         about="This web portal is made for smooth run of the hub called Light de Literacy in JIIT"
         githublink="https://github.com/mayergoyal/LDL-Emailing-Admin-Portal"
-        deploylink={NaN}
+        deploylink={null}
         projectdisplay={l2}
       />
       <ProjectBox
         name="Stock Analysis, Recommendation & Portfolio management system "
         imgsrc={stock}
         about="This streamlit app was designed for stock investmentrecommendation , stock prediction, paper trading and portfolio management"
-        githublink={NaN}
-        deploylink={NaN}
+        githublink={null}
+        deploylink={null}
         projectdisplay={s2}
       />
       <ProjectBox
