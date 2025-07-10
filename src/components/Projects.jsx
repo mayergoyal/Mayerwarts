@@ -14,6 +14,8 @@ import fashion from "../assets/fashion.jpg"
  import vibecheck from "../assets/vibecheck.png"
  import v2 from "../assets/vc.png"
  import ehc from "../assets/engtodi.jpg"
+ import voice1 from "../assets/voice1.png"
+ import vpai from "../assets/voicepenai.png"
 const Projects=()=>{
 return (
   <div className="mani">
@@ -34,6 +36,14 @@ return (
         githublink="https://github.com/mayergoyal/COEengtohindi"
         deploylink={null}
         projectdisplay={ehc}
+      />
+      <ProjectBox
+        name="VoicePen AI"
+        imgsrc={voice1}
+        about="A dynamic backend service built with FastAPI and Uvicorn, enabling real-time audio transcription using Whisper. Deployed via Docker with complete support for PyAudio and ONNX models, this project turns audio into accurate text for integration with grammar and punctuation correction"
+        githublink="https://github.com/mayergoyal/VoicePen_AI"
+        deploylink="https://voicepen-ai-2.onrender.com"
+        projectdisplay={vpai}
       />
       <ProjectBox
         name="Fashion App"
