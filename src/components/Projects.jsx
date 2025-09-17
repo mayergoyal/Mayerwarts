@@ -17,6 +17,7 @@ import fashion from "../assets/fashion.jpg"
  import voice1 from "../assets/voice1.png"
  import vpai from "../assets/voicepenai.png"
  import bus from "../assets/bus.png"
+ import busss from "../assets/busss.png"
 const Projects=()=>{
 return (
   <div className="mani">
@@ -93,7 +94,7 @@ return (
 Node.js, React, WebSockets, and Redis, deployed as a containerized application with Docker."
         githublink="https://github.com/mayergoyal/BusTicketing"
         deploylink="https://busticketing-1.onrender.com/"
-        projectdisplay={v2}
+        projectdisplay={busss}
       />
     </div>
   </div>
