@@ -16,6 +16,7 @@ import fashion from "../assets/fashion.jpg"
  import ehc from "../assets/engtodi.jpg"
  import voice1 from "../assets/voice1.png"
  import vpai from "../assets/voicepenai.png"
+ import bus from "../assets/bus.png"
 const Projects=()=>{
 return (
   <div className="mani">
@@ -83,6 +84,15 @@ return (
         about="This web page is designed for vibe checking through fun questions and dynamic results based on user input"
         githublink="https://github.com/mayergoyal/Vibe-Check"
         deploylink="https://vibe-check-aub8.vercel.app/"
+        projectdisplay={v2}
+      />
+      <ProjectBox
+        name="Real time Bus Ticketing System "
+        imgsrc={bus}
+        about="Engineered a full-stack, real-time bus ticketing platform using
+Node.js, React, WebSockets, and Redis, deployed as a containerized application with Docker."
+        githublink="https://github.com/mayergoyal/BusTicketing"
+        deploylink="https://busticketing-1.onrender.com/"
         projectdisplay={v2}
       />
     </div>

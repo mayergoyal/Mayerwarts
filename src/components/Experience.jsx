@@ -5,6 +5,14 @@ import brickwall from "../assets/brickwall.png"
 // Assuming you have a CSS file for styling
 const experiences = [
   {
+    title: "AI / ML Engineer Intern ",
+    company: "COE",
+    duration: "June 2025 - July 2025",
+    description:
+      "Worked under JIIT professor on a AI/ML domain project , created a platform to convert english language videos into hindi using AI models like Whisper and GPT-4  using React for frontend and FastAPI for backend .",
+    link: "https://github.com/mayergoyal/COEengtohindi",
+  },
+  {
     title: "Software Developer Intern",
     company: "DRID JIIT Noida",
     duration: "June 2024 – July 2024",

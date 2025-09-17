@@ -46,6 +46,13 @@ function SkillsSphere() {
       { label: "Mongodb", color: "brown", size: 0.55, radius: 5, speed: 0.3 },
       { label: "React", color: "green", size: 0.6, radius: 5.5, speed: 0.35 },
       { label: "Git", color: "black", size: 0.5, radius: 6, speed: 0.25 },
+      {
+        label: "Transformer",
+        color: "#36cfdaff",
+        size: 0.56,
+        radius: 5.3,
+        speed: 0.44,
+      },
       // Add more skills as needed
     ],
     []

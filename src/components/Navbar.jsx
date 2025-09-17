@@ -59,7 +59,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="https://drive.google.com/file/d/15utsjI7fX2ULTAwhLG62Jt0rx1COllu6/view?usp=sharing"
+              href="https://drive.google.com/file/d/1enADyLLQ8UgE4AT0v5uzMpahTEdkeFm5/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
